@@ -23,6 +23,8 @@ Sistema completo de administración de biblioteca con **backend en Java 17 orien
 -  **Swagger UI / OpenAPI 3.0** integrado en tiempo de ejecución
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/26e8a029-4ff0-4863-a762-1575d1c0f24a" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e541eeb9-24c8-4a30-9a0b-b688529c0199" />
+
 
 
 ---
