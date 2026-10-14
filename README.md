@@ -22,6 +22,9 @@ Sistema completo de administración de biblioteca con **backend en Java 17 orien
 -  **Auditoría inmutable** — logs de trazabilidad de cada operación
 -  **Swagger UI / OpenAPI 3.0** integrado en tiempo de ejecución
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/26e8a029-4ff0-4863-a762-1575d1c0f24a" />
+
+
 ---
 
 ##  Arquitectura
