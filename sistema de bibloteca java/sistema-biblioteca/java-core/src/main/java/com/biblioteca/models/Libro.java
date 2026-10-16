@@ -9,15 +9,14 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
         use = JsonTypeInfo.Id.NAME,
         include = JsonTypeInfo.As.PROPERTY,
         property = "tipoLibro",
-        defaultImpl = Libro.class,
+        defaultImpl = LibroFisico.class,
         visible = true
 )
 @JsonSubTypes({
         @JsonSubTypes.Type(value = LibroDigital.class, name = "DIGITAL"),
-        @JsonSubTypes.Type(value = LibroFisico.class, name = "FISICO"),
-        @JsonSubTypes.Type(value = Libro.class, name = "GENERAL")
+        @JsonSubTypes.Type(value = LibroFisico.class, name = "FISICO")
 })
-public class Libro {
+public abstract class Libro {
     private int id;
     private String titulo;
     private String autor;
@@ -174,9 +173,8 @@ public class Libro {
         this.edicion = edicion;
     }
 
-    public String getTipoLibro() {
-        return "GENERAL";
-    }
+    // cada subclase define su tipo: DIGITAL o FISICO
+    public abstract String getTipoLibro();
 
     public void setTipoLibro(String tipoLibro) {
         // no-op para deserializacion
